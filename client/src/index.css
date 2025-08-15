@@ -1,0 +1,62 @@
+
+@import "tailwindcss" ;
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+@layer base {
+    * {
+      box-sizing: content-box;
+    }
+  }
+
+  
+  html, body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+  }
+
+  * {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Light weight */
+    font-style: normal;
+  }
+  .monsterrat-800{
+    font-weight: 400; /* Light weight */
+
+  }
+  .slider-container *{
+    width: 250px;
+  }
+  .artisan-username{
+    font-weight: bold;
+  }
+  .fade-enter {
+    opacity: 0;
+  }
+
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+  }
+
+  .fade-exit {
+    opacity: 1;
+  }
+
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms ease-in;
+  }
+  .animate-move-up-down{
+    animation: moveUpDown 3.8s infinite ease-in-out;
+  }
+  @keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(20px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  

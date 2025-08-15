@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAJ Service | Services section </title>
+</head>
+<body>
+    <fieldset>
+        <legend>
+            MAJ Service | Partie Service - 
+            <%=service.title%>
+        </legend>
+        <form action="/api/update/service/<%=service.id%>" method="post">
+            <input type="text" name="title"
+            
+            value="
+            <%=service.title%>
+"
+            placeholder="title">
+            <input type="text"
+            value=
+            <%=service.description%>
+
+            name="description" placeholder="description">
+            <input type="number" value=
+            <%=service.price%>
+            name="price" placeholder="price">
+            <select name="category" value="<%= service.category%>">
+                <option value="minitierie">Minitierie</option>
+                <option value="foregerie">Foregerie</option>
+                <option value="plomberie">Plomberie</option>
+            </select>
+            <select name="available" value="<%= service.category%>">
+                <option value="true">Available</option>
+                <option value="false">Non-Available</option>
+            </select>
+            <button type="submit">
+                Update
+            </button>
+        </form>
+    </fieldset>
+</body>
+</html>

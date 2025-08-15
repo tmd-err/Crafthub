@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page  | login </title>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>
+            login
+        </h2>
+        <form action="/api/auth/login" method="post">
+            <div class="form-group">
+                <label for="name">e-mail :</label>
+                <input type="text" placeholder="E-mail" name="email">
+            </div><br>
+            <div class="form-group">
+                <label for="pswd">pswd- :</label>
+                <input type="password" placeholder="Password" name="pswd">
+            </div>
+            <input type="checkbox" name="stayConnected" value="true" id="">
+            <div>
+                <button name="submitted" type="submit">
+                    Login 
+                </button>
+            </div>
+        </form>
+        <p>
+            Don't have account ? <a href="/signup">Signup</a>
+        </p>
+        <form action="/api/auth/logout" method="post">
+            <button type="submit">
+                Logout
+            </button>
+        </form>
+    </div>
+    
+</body>
+</html>
