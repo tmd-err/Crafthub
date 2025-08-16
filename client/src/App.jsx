@@ -5,7 +5,7 @@ import Login from './components/Auth/Login' ;
 import Home from './Pages/Homepage';
 import Footer from './assets/Footer';
 import Contact from './components/Contact';
-import Services from './pages/Services';
+import Services from './Pages/Services';
 import AddService from './components/Service/AddService';
 import { ToastContainer } from 'react-toastify';
 import Profile from "./components/Profile";
