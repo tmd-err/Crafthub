@@ -1,6 +1,6 @@
 import  { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addMessage, sendMessage } from '../../Redux/slices/chatSlice';
+import { addMessage, sendMessage } from '../../Redux/Slices/chatSlice';
 import {FaPaperPlane} from 'react-icons/fa'
 import PropTypes from 'prop-types';
 

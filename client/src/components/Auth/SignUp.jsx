@@ -6,7 +6,7 @@ import {
   signUpAsync,
   setError,
   resetForm,
-} from "../../Redux/slices/signUpSlice";
+} from "../../Redux/Slices/SignUpSlice";
 import { useNavigate, Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Swal from "sweetalert2";

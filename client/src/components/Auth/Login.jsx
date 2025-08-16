@@ -1,7 +1,7 @@
 import  { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
-import { setLoginData, loginAsync, setError, resetForm } from "../../Redux/slices/loginSlice"; 
+import { setLoginData, loginAsync, setError, resetForm } from "../../Redux/Slices/loginSlice"; 
 import {useNavigate ,Link} from "react-router-dom" ;
 import {Helmet} from "react-helmet" ; 
 
